@@ -60,16 +60,11 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-        window.onload = function() {
-        document.getElementById("tah_audio").play();
-    }
-</script>  
+    
 </head>
 
-<body id="home">
-    <audio id="tah_audio" src="bruno_mars_marry_you.mp3" loop="loop"></audio>
-        
+<body id="home">    
+
     <!-- start page-wrapper -->
     <div class="page-wrapper">
 
@@ -162,7 +157,7 @@
         <!-- end of hero slider -->
 
         <!-- start count-down-section -->
-        <section class="count-down-section count-section-padding parallax" data-bg-image="images/gallery/countdown1.jpg" data-speed="7" id="countdown">
+        <section class="count-down-section count-section-padding parallax" data-bg-image="images/gallery/countdown.jpeg" data-speed="7" id="countdown">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-4">
@@ -224,7 +219,7 @@
         <!-- end wedding-couple-section -->
 
         <!-- start cta -->
-        <section class="cta section-padding count-section-padding parallax" data-bg-image="images/gallery/celebrate1.jpg" data-speed="7">
+        <section class="cta section-padding count-section-padding parallax" data-bg-image="images/gallery/img17.jpeg" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -440,22 +435,35 @@
             </div> <!-- end container -->
         </footer>
         <!-- end footer -->
-
+        <audio controls id="tah_audio" autoplay>         
+            <source src="bruno_mars_marry_you.mp3" type="audio/mpeg">         
+          </audio>
     </div>
     <!-- end of page-wrapper -->
 
-
+    <script>
+       window.onload = function() {
+    document.getElementById("tah_audio").play();}       
+    window.onclick=function(){
+        document.getElementById("tah_audio").play();
+    }
+    window.ondblclick=function(){
+        document.getElementById("tah_audio").pause();
+    }
+    </script>
 
     <!-- All JavaScript files
     ================================================== -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    
     <!-- Plugins for this template -->
     <script src="js/jquery-plugin-collection.js"></script>
     <script src="js/spirit.js"></script>
 
     <!-- Custom script for this template -->
+    
+      <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
     <script src="js/script.js"></script>
 </body>
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh-oh'},{'server':'sg2plzcpnl476814'},{'id':'8047697'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
